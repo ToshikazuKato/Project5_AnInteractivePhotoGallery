@@ -1,0 +1,92 @@
+
+/* Google fonts imported
+
+    font-family: 'Arvo', serif;
+    font-family: 'Playfair Display', serif;
+
+*/
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+}
+
+/* Titile and Search section */
+
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.title{
+  margin: 1.5em 0 2.0em 0;
+  color: #909090;
+}
+
+.search{
+  width: 25%;
+  min-width: 180px;
+  max-width: 350px;
+  height: 40px;
+  border: 2px solid #909090;
+  border-radius: 4px;
+  padding: 1vh 2vw;
+  outline: none;
+  color: #716b6b;
+}
+
+.search:focus{
+  box-shadow: 0 0 5px rgb(28, 28, 27);
+}
+
+/* Gallery section */
+
+.gallery{
+  margin: 10vh 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.photo{
+  margin-bottom: 5vh;
+  flex: 1;
+}
+
+.img{
+  border-radius: 50%;
+}
+
+
+
+/* Media Query */
+@media screen and (min-width: 768px) {
+
+  .search{
+    width: 40%;
+  }
+
+  .gallery{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .photo{
+    flex-basis: 50%;
+    margin-bottom: 7vh;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+  .photo{
+    flex-basis: 25%;
+    margin-bottom: 10vh;
+  }
+
+}
