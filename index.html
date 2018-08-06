@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Arvo|Playfair+Display" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="lightbox/css/lightcase.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>An Interactive Photo Gallery</title>
   </head>
@@ -13,78 +14,79 @@
     <main class="container">
 
       <h1 class="title"> - Photo Gallery - </h1>
-      <input class="search" type="text" placeholder="Search">
+      <input id="search" class="search" type="text" placeholder="Search">
 
       <div class="gallery">
 
-        <div class="photo">
-          <a href="img/01.jpg">
+        <div  class="photo">
+          <a id="1" href="img/01.jpg" data-rel="lightcase:myCollection" data-lc-categories="myCategory1 myCategory2" data-lc-caption="Hay Bales: I love hay bales. Took this snap on a drive through the countryside past some straw fields." class="caption">
             <img class="img" src="img/thumbnails/01.jpg" alt="Hay Bales">
           </a>
+          <!-- <div class="cover">Hay Bales</div> -->
         </div>
 
         <div class="photo">
-          <a href="img/02.jpg">
+          <a id="2" href="img/02.jpg" data-rel="lightcase:myCollection" data-lc-categories="myCategory1" data-lc-caption="Lake: The lake was so calm today. We had a great view of the snow on the mountains from here." class="caption">
             <img class="img" src="img/thumbnails/02.jpg" alt="Lake">
           </a>
         </div>
 
         <div class="photo">
-          <a href="img/03.jpg">
+          <a id="3" href="img/03.jpg" data-rel="lightcase:myCollection" data-lc-categories="myCategory2 myCategory3 myCategory4" data-lc-caption="Canyon: I hiked to the top of the mountain and got this picture of the canyon and trees below." class="caption">
             <img class="img" src="img/thumbnails/03.jpg" alt="Canyon">
           </a>
         </div>
 
         <div class="photo">
-          <a href="img/04.jpg">
+          <a id="4" href="img/04.jpg" data-rel="lightcase:myCollection" data-lc-categories="myCategory2 myCategory3 myCategory4 myCategory5" data-lc-caption="Iceberg: It was amazing to see an iceberg up close, it was so cold but didn’t snow today." class="caption">
             <img class="img" src="img/thumbnails/04.jpg" alt="Iceberg">
           </a>
         </div>
 
         <div class="photo">
-          <a href="img/05.jpg">
+          <a id="5" href="img/05.jpg" data-rel="lightcase:myCollection" data-lc-categories="myCategory2 myCategory3 myCategory4 myCategory5 myCategory6" data-lc-caption="Desert: The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons." class="caption">
             <img class="img" src="img/thumbnails/05.jpg" alt="Desert">
           </a>
         </div>
 
         <div class="photo">
-          <a href="img/06.jpg">
+          <a id="6" href="img/06.jpg" data-rel="lightcase:myCollection" data-lc-categories="myCategory2 myCategory3 myCategory4 myCategory5 myCategory6 myCategory7" data-lc-caption="Fall: Fall is coming, I love when the leaves on the trees start to change color." class="caption">
             <img class="img" src="img/thumbnails/06.jpg" alt="Fall">
           </a>
         </div>
 
         <div class="photo">
-          <a href="img/07.jpg">
+          <a id="7" href="img/07.jpg" data-rel="lightcase:myCollection" data-lc-categories="myCategory2 myCategory3 myCategory4 myCategory5 myCategory6 myCategory7 myCategory8" data-lc-caption="Plantation: I drove past this plantation yesterday, everything is so green!" class="caption">
             <img class="img" src="img/thumbnails/07.jpg" alt="Plantation">
           </a>
         </div>
 
         <div class="photo">
-          <a href="img/08.jpg">
+          <a id="8" href="img/08.jpg" data-rel="lightcase:myCollection" data-lc-categories="myCategory2 myCategory3 myCategory4 myCategory5 myCategory6 myCategory7 myCategory8 myCategory9" data-lc-caption="Dunes: My summer vacation to the Oregon Coast. I love the sandy dunes!" class="caption">
             <img class="img" src="img/thumbnails/08.jpg" alt="Dunes">
           </a>
         </div>
 
         <div class="photo">
-          <a href="img/09.jpg">
+          <a id="9" href="img/09.jpg" data-rel="lightcase:myCollection" data-lc-categories="myCategory2 myCategory3 myCategory4 myCategory5 myCategory6 myCategory7 myCategory8 myCategory9 myCategory10" data-lc-caption="Countryside Lane: We enjoyed a quiet stroll down this countryside lane." class="caption">
             <img class="img" src="img/thumbnails/09.jpg" alt="Countryside Lane">
           </a>
         </div>
 
         <div class="photo">
-          <a href="img/10.jpg">
+          <a id="10" href="img/10.jpg" data-rel="lightcase:myCollection" data-lc-categories="myCategory2 myCategory3 myCategory4 myCategory5 myCategory6 myCategory7 myCategory8 myCategory9 myCategory10 myCategory11" data-lc-caption="Sunset: Sunset at the coast! The sky turned a lovely shade of orange." class="caption">
             <img class="img" src="img/thumbnails/10.jpg" alt="Sunset">
           </a>
         </div>
 
         <div class="photo">
-          <a href="img/11.jpg">
+          <a id="11" href="img/11.jpg" data-rel="lightcase:myCollection" data-lc-categories="myCategory2 myCategory3 myCategory4 myCategory5 myCategory6 myCategory7 myCategory8 myCategory9 myCategory10 myCategory11 myCategory12" data-lc-caption="Cave: I did a tour of a cave today and the view of the landscape below was breathtaking." class="caption">
             <img class="img" src="img/thumbnails/11.jpg" alt="Cave">
           </a>
         </div>
 
         <div class="photo">
-          <a href="img/12.jpg">
+          <a id="12" href="img/12.jpg" data-rel="lightcase:myCollection" data-lc-categories="myCategory11 myCategory12 myCategory1" data-lc-caption="Bluebells: I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in." class="caption">
             <img class="img" src="img/thumbnails/12.jpg" alt="Bluebells">
           </a>
         </div>
@@ -92,6 +94,8 @@
       </div>
     </main>
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="lightbox/js/lightcase.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

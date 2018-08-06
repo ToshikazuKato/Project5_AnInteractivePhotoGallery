@@ -61,7 +61,20 @@ body{
   border-radius: 50%;
 }
 
+a[class*='lightcase-icon-'].lightcase-icon-prev,
+a[class*='lightcase-icon-'].lightcase-icon-next{
+  display: block;
+}
 
+/* opacity */
+.img{
+  opacity: 1.0;
+  transition: .3s ease-in-out;
+}
+
+.img:hover{
+  opacity: 0.5;
+}
 
 /* Media Query */
 @media screen and (min-width: 768px) {
