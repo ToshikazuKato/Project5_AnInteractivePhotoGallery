@@ -1,24 +1,24 @@
-jQuery(document).ready(function($) {
+$(document).ready(function() {
 
 //Searchbox
-$('#search').keyup(function() {
+  $('#search').keyup(function() {
 
-  let searchedWord = $('#search').val().toUpperCase();
-  let caption = $('.caption');
+    let searchedWord = $('#search').val().toUpperCase();
+    let caption = $('.caption');
 
-  for(let i = 1; i < caption.length+1; i++) {
+    for(let i = 1; i < caption.length+1; i++) {
 
-    //get data-lc-caption
-    let result = $('#' + i).data('lcCaption').toUpperCase();
+      //get data-lc-caption
+      let result = $('#' + i).data('lcCaption').toUpperCase();
 
-    if(result.indexOf(searchedWord) > -1){
-      $('#' + i).parent().css('display', 'block');
-    }else{
-      $('#' + i).parent().css('display', 'none');
+      if(result.indexOf(searchedWord) > -1){
+        $('#' + i).parent().css('display', 'block');
+      }else{
+        $('#' + i).parent().css('display', 'none');
+      }
     }
-  }
 
-});//Searchbox
+  });//Searchbox
 
 
 
