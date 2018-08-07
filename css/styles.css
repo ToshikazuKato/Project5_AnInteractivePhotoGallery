@@ -66,6 +66,10 @@ a[class*='lightcase-icon-'].lightcase-icon-next{
   display: block;
 }
 
+#lightcase-info #lightcase-sequenceInfo{
+  visibility: hidden;
+}
+
 /* opacity */
 .img{
   opacity: 1.0;
